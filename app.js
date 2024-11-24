@@ -18,10 +18,8 @@ async function createDirectories() {
                 console.log(`${childDir}`);
             }
         }
-        // await fs.rm(parentDir, { recursive: true, force: true });
-        // console.log(`Պապկաներն ու ֆայլերը հաջողությամբ ջնջվել են:`);
     } catch (err) {
-        console.error(err);
+        console.log('error creating ',err)
     }
 }
 
